@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>League of Legends Helper</title>
+</head>
+<body>
+    <!--/*@thymesVar id="summonerName" type="com"*/-->
+    <form action="#" th:action="@{/build}" th:object="${summonerName}" method="post">
+        <input type="text" name="summonerName" placeholder="summoner name"/>
+        <input type="submit">
+    </form>
+</body>
+</html>
